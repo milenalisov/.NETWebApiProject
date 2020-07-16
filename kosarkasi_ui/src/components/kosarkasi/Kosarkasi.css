@@ -1,0 +1,21 @@
+.naslov{
+    text-align: center;
+
+}
+
+thead {
+    background-color:yellow !important;
+}
+
+table, thead, tbody, tr, th, td {
+    border: solid;
+    text-align:center;
+}
+
+div {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+

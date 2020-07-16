@@ -1,0 +1,98 @@
+﻿<div class="row">
+    <div id="divInfo">
+        <br />
+        <br />
+        <p id="info" style="font-size:large">
+            <b>Korisnik nije prijavljen na sistem!</b>
+            <button style="float:right; background-color:yellow; border: 2px solid black;" class="btn btn-default" id="regIPri">Registracija i Prijava</button>
+        </p>
+
+    </div>
+</div>
+<div class="row">
+    <div style="display: none" id="divInfo1">
+        <br />
+        <br />
+        <p id="info1" style="font-size:large">
+            <b>Registracija i prijava korisnika</b>
+            <button style="float:right; background-color:yellow; border: 2px solid black;" class="btn btn-default" id="pocetak">Pocetak</button>
+        </p>
+
+    </div>
+</div>
+
+<div class="row" style="display:none" id="divInfo2">
+    <div class="col-sm-6">
+        <br />
+        <br />
+        <p id="info2"></p>
+
+
+    </div>
+    <div class="col-sm-6">
+        <br />
+        <br />
+        <button style=" float: right; background-color: yellow; border: 2px solid black;" class="btn btn-default" id="odjava">Odjava</button>
+    </div>
+
+</div>
+
+<div class="row">
+    <div style="text-align:center; display:none" id="zaRegIPri">
+        <br />
+        <br />
+        <p><label>Korisnicko ime: </label><input type="text" id="user" /></p>
+        <br />
+        <p><label>Lozinka: </label><input type="password" id="loz" /></p>
+        <br />
+        <p>
+            <button type="button" id="registracija" class="btn btn-default" style="background-color:yellow; border: 2px solid black;">Registracija</button>
+            <button type="button" id="prijava" class="btn btn-default" style="border: 2px solid black;">Prijava</button>
+        </p>
+    </div>
+</div>
+<div class="row">
+    <p id="uspesno" style="color:blue; text-align:center; display:none">Uspesna registracija na sistem!</p>
+</div>
+<div class="row">
+    <div style="text-align:center">
+        <h2>Kosarkasi</h2>
+        <br />
+    </div>
+</div>
+<div class="row">
+    <div style="text-align:center" id="dataKosarkasi">
+
+    </div>
+    <div style="text-align:center; display:none" id="divpretraga">
+        <form method="post" action="post/" id="pretragaForm">
+            <br />
+            <h3>Pretraga po broju utakmica</h3>
+            <br />
+            <p><label>Najmanje: </label><input type="text" id="najmanje" /> </p>
+            <p><label>Najvise: </label><input type="text" id="najvise" /> </p>
+            <p><button type="submit" class="btn btn-default" style="border: 2px solid black;">Pretraga</button></p>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div style="text-align:center;  display:none" id="izmenaDiv">
+        <form method="post" action="post/" id="izmenaForm">
+
+            <br />
+            <p><label>Ime i prezime: </label><input type="text" id="ime" /> </p>
+            <p><label style="width: 215px">Godina rodjenja: </label><input type="number" min="1976" max="1999" id="rodjenje" /> </p>
+            <p><label>Klub: </label><select id="klub"></select> </p>
+            <p><label style="width: 215px" >Broj utakmica: </label><input style="width: 80px"type="number" min="1" id="utakmica" /> </p>
+            <p><label style="width: 215px">Prosecno poena: </label><input style="width: 80px"type="number" step="any" min="0" max="30" id="poeni" /> </p>
+            <p><button type="submit" class="btn btn-default" style="background-color:yellow; border: 2px solid black;">Izmena</button>
+               <button type="button" id="odustajanje" class="btn btn-default" style="border: 2px solid black;">Odustajanje</button>
+            </p>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    @Scripts.Render("~/Scripts/Skripta.js");
+    <link type="text/css" href="~/Content/Site.css" />
+}
